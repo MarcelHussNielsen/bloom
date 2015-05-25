@@ -1,0 +1,15 @@
+/* variables.scss */
+
+
+/* Grid */
+
+@grid-cols            : 12;
+@grid-gutter 	      : 20px;
+
+/* Site width */
+
+@site-width-total		  : none; // default i.e fills the screen.
+@site-width-small	      : 960px;
+@site-width-medium	      : 1120px;
+@site-width-large	      : 1480px;
+@site-width-xlarge	      : 1700px;

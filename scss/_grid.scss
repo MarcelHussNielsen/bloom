@@ -1,0 +1,61 @@
+/* grid.scss */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+  margin-bottom: 10px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  min-height: 1px;  // prevent col from collaps
+}
+ 
+@media all and ( min-width: 600px ) {
+ 
+  /* Col width */
+  .col-1 {
+    width: percentage((1 / @grid-cols));
+  }
+  .col-2 {
+    width: percentage((2 / @grid-cols));
+  }
+  .col-3 {
+    width: percentage((3 / @grid-cols));
+  }
+  .col-4 {
+    width: percentage((4 / @grid-cols));
+  }
+  .col-5 {
+    width: percentage((5 / @grid-cols));
+  }
+  .col-6 {
+    width: percentage((6 / @grid-cols));
+  }
+  .col-7 {
+    width: percentage((7 / @grid-cols));
+  }
+  .col-8 {
+    width: percentage((8 / @grid-cols));
+  }
+  .col-9 {
+    width: percentage((9 / @grid-cols));
+  }
+  .col-10 {
+    width: percentage((10 / @grid-cols));
+  }
+  .col-11 {
+    width: percentage((11 / @grid-cols));
+  }
+  .col-12 {
+    width: 100%;
+  }
+ 
+}

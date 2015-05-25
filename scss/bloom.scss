@@ -1,0 +1,40 @@
+/*
+   Bloom - A responsive CSS framework that delivers the minimum to get started.
+   Github repo :                                          
+   Current version : Alpha 0.1
+   By Marcel Huss-Nielsen @ MHN. 
+*/
+
+// Variables
+@import variables.scss;
+
+// Mixins
+@import mixins.scss;  // bp mixin
+
+// Reset
+@import sanitize.scss;
+
+// Core
+@import scaffolding.scss;  // media object, flag object, clearfix.
+@import grid.scss;
+
+// Utilities
+@import utilities.scss; // z-index list, generic classes.
+
+// Below is optional, and is only needed if you choose to use the bloom theme.
+
+// Components 
+@import
+bloom/type.scss,
+bloom/forms.scss,
+bloom/tables.scss,
+bloom/navbar.scss,
+bloom/sidenav.scss,
+bloom/header.scss,
+bloom/footer.scss,
+bloom/off-canvas.scss,
+bloom/icons.scss,
+bloom/buttons.scss,
+bloom/modals.scss,
+bloom/lists.scss;
+
